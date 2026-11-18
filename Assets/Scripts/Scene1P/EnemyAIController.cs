@@ -10,9 +10,9 @@ public class EnemyAIController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (this.transform.position.y < maxY || this.transform.position.y > minY)
+        if (ball.transform.position.y < maxY || ball.transform.position.y > minY)
         {
-            float ballpos = ball.gameObject.transform.position.y;
+            float ballpos = ball.transform.position.y;
             float x = this.transform.position.x;
             float y = ballpos;
             float z = this.transform.position.z;
