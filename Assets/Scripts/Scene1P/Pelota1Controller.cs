@@ -1,12 +1,11 @@
 using System.Collections;
-using Unity.VisualScripting;
 using UnityEngine;
 
-public class PelotaController : MonoBehaviour
+public class Pelota1Controller : MonoBehaviour
 {
     Rigidbody2D rb;
     [SerializeField] float force;
-    [SerializeField] GameManager manager;
+    [SerializeField] GameManager1P manager;
     float MIN_Y = -1;
     float MAX_Y = 1;
     float MIN_ANGLE = -1;

@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class GameManager : MonoBehaviour
+public class GameManager2P : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI p1scoreTXT;
     [SerializeField] TextMeshProUGUI p2scoreTXT;

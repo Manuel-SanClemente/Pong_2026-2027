@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PalaController : MonoBehaviour
+public class Pala2Controller : MonoBehaviour
 {
     [SerializeField] float speed = 3.5f;
     const float maxY = 4.2f;
