@@ -9,6 +9,12 @@ TagManager:
   - Pelota
   - Porteria1
   - Porteria2
+  - GoTo2Player
+  - GoTo4Player
+  - Porteria3
+  - Porteria4
+  - Pala3
+  - Pala4
   layers:
   - Default
   - TransparentFX

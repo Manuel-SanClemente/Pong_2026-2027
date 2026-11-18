@@ -1,15 +1,19 @@
-using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
+using TMPro;
+using UnityEngine.SceneManagement;
 
-public class GameManager : MonoBehaviour
+public class GameManager4P : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI p1scoreTXT;
     [SerializeField] TextMeshProUGUI p2scoreTXT;
+    [SerializeField] TextMeshProUGUI p3scoreTXT;
+    [SerializeField] TextMeshProUGUI p4scoreTXT;
     [SerializeField] GameObject pelota;
     bool running = false;
     int p1score = 0;
     int p2score = 0;
+    int p3score = 0;
+    int p4score = 0;
 
     void Start()
     {
@@ -24,9 +28,9 @@ public class GameManager : MonoBehaviour
             running = true;
         }
 
-        if (running && Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
-            Application.Quit();
+            SceneManager.LoadScene(0);
         }
     }
 
@@ -40,5 +44,17 @@ public class GameManager : MonoBehaviour
     {
         p2score++;
         p2scoreTXT.text = p2score.ToString();
+    }
+
+    public void AddP3Score()
+    {
+        p3score++;
+        p3scoreTXT.text = p3score.ToString();
+    }
+
+    public void AddP4Score()
+    {
+        p4score++;
+        p4scoreTXT.text = p4score.ToString();
     }
 }

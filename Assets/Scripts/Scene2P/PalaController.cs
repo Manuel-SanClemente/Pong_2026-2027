@@ -11,11 +11,11 @@ public class PalaController : MonoBehaviour
     {
         if (CompareTag("Pala2"))
         {
-            if (Input.GetKey(KeyCode.I) && transform.position.y < maxY)
+            if (Input.GetKey(KeyCode.UpArrow) && transform.position.y < maxY)
             {
                 transform.Translate(Vector3.up * speed * Time.deltaTime);
             }
-            if (Input.GetKey(KeyCode.K) && transform.position.y > minY)
+            if (Input.GetKey(KeyCode.DownArrow) && transform.position.y > minY)
             {
                 transform.Translate(Vector3.down * speed * Time.deltaTime);
             }
