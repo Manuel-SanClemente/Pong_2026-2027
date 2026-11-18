@@ -13,13 +13,10 @@ public class EnemyAIController : MonoBehaviour
         if (ball.transform.position.y < maxY || ball.transform.position.y > minY)
         {
             float ballpos = ball.transform.position.y;
-            float x = this.transform.position.x;
-            float y = ballpos;
-            float z = this.transform.position.z;
+            Vector3 initialpos = this.transform.position;
+            Vector3 targetpos = new Vector3(initialpos.x, ballpos, initialpos.z);
 
-            Debug.Log("Posicion x: " + x + " Posicion y: " + y + " Posicion z: " + z);
-
-            this.transform.position = new Vector3(x, y, z);
+            this.transform.position = Vector3.Lerp(initialpos, targetpos, Time.deltaTime);
         }
 
     }

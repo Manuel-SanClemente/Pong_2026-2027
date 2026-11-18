@@ -1105,7 +1105,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46e29a401dbe3b1aacf26de228060ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyAIController
-  speed: 3.5
   ball: {fileID: 430131655}
 --- !u!1 &1010839610
 GameObject:
@@ -1443,7 +1442,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36e2f7b0075646b548b8f2633099984a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Pala1Controller
-  speed: 3.5
+  speed: 6.5
 --- !u!1 &1285955425
 GameObject:
   m_ObjectHideFlags: 0
